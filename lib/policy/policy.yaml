@@ -1,0 +1,53 @@
+version: 1
+rules:
+  # Portfolio-level examples (illustrative; values can be tuned)
+  - id: portfolio.position_cap
+    description: "Single position cap (max % of portfolio)"
+    severity: hard
+    path: portfolio.positionPct
+    op: "<="
+    value: 0.1
+    missing: warn
+
+  - id: portfolio.illiquids_cap
+    description: "Illiquids cap (max % of portfolio)"
+    severity: hard
+    path: portfolio.illiquidsPct
+    op: "<="
+    value: 0.35
+    missing: warn
+
+  # PE/VC examples
+  - id: vc.runway_months_min
+    description: "Minimum runway (months)"
+    severity: hard
+    path: vc.runwayMonths
+    op: ">="
+    value: 12
+    missing: breach
+
+  # Public equities examples
+  - id: public.adv_usd_min
+    description: "Minimum average daily dollar volume (ADV)"
+    severity: hard
+    path: public.advUsd
+    op: ">="
+    value: 1000000
+    missing: warn
+
+  # Real estate examples
+  - id: re.dscr_min
+    description: "Minimum DSCR"
+    severity: hard
+    path: re.dscr
+    op: ">="
+    value: 1.2
+    missing: breach
+
+  - id: re.ltv_max
+    description: "Maximum LTV"
+    severity: hard
+    path: re.ltv
+    op: "<="
+    value: 0.7
+    missing: breach
