@@ -1,0 +1,11 @@
+{
+  "assetType": "pe_vc",
+  "title": "Acme Series B",
+  "inputs": {
+    "thesis": "Strong usage growth; needs validation on margins and runway.",
+    "vc": { "runwayMonths": 9 },
+    "portfolio": { "positionPct": 0.08, "illiquidsPct": 0.3 },
+    "researchUrls": []
+  }
+}
+

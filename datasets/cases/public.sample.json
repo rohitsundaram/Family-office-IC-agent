@@ -1,0 +1,11 @@
+{
+  "assetType": "public_equities",
+  "title": "Example Public Equity",
+  "inputs": {
+    "thesis": "High quality business; check liquidity and position sizing.",
+    "public": { "advUsd": 750000 },
+    "portfolio": { "positionPct": 0.12, "illiquidsPct": 0.25 },
+    "researchUrls": []
+  }
+}
+

@@ -1,0 +1,11 @@
+{
+  "assetType": "real_estate",
+  "title": "Dallas Multifamily",
+  "inputs": {
+    "thesis": "Stabilized multifamily with modest leverage; ensure DSCR under stress.",
+    "re": { "dscr": 1.15, "ltv": 0.72 },
+    "portfolio": { "positionPct": 0.06, "illiquidsPct": 0.34 },
+    "researchUrls": []
+  }
+}
+
